@@ -8,10 +8,12 @@
 }
 
 body{
-    background-color: rgb(255, 233, 215)
+    background-color: rgb(255, 233, 215);
+
+    font-family: 'Indie Flower', cursive;
 }
 nav{
-    background-color: peachpuff;
+    background-color: #ffdab9;
     height: 80px;
     width: 100%;
     /* display: flex; */
@@ -82,6 +84,7 @@ nav ul li:hover{
         display: block;
     }
     nav ul{
+        background-color: #ffe9d7;
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -106,5 +109,56 @@ nav ul li:hover{
     }
     #check:checked ~ ul{
         left: 0;
+    }
+}
+body>h1{
+    font-size: 64px;
+    text-align: center;
+    margin-top: 10px;
+}
+body>h2{
+    font-size: 40px;
+    margin-left: 30px;
+}
+body>hr{
+    width: 90vw;
+    margin: 0 5% 0 30px;
+    color: black;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    transition: all 0.1s;
+}
+.intro>p{
+    width: 75vw;
+    padding: 0 20px;
+    transition: all 0.1s;
+    text-align: justify;
+    margin-right: 40px;
+    font-size: 1.5rem;
+}
+.intro>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1050px) {
+    .intro{
+        display: block;
+    }
+    .intrologo{
+        margin: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .intrologo>img{
+        margin: 10px 0;
+        width: 60%;
+    }
+    .intro>p{
+        width: 100vw;
     }
 }
