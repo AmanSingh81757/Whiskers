@@ -1,70 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body{
-    background-color: rgb(255, 251, 248);
+    background-color: rgb(255, 233, 215)
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+nav{
+    background-color: peachpuff;
     height: 80px;
-    background-color: rgb(255, 210, 183);
     width: 100%;
+    /* display: flex; */
+    align-items: center;
 }
 .logo{
-    height: 95%;
-    margin-left: 10%;
-    transition: all ease 0.3s;
+    height: 80px;
+    margin: 0 100px;
+    transition: all 0.25s;
 }
-.logo:hover{
+.logo img{
+    height: 100%;
+}
+nav ul{
+    float: right;
+    margin-right: 200px;
+    /* margin-left: 50px; */
+    height: 80px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    transition: all 0.25s;
+}
+nav ul li{
+    display: inline-block;
+    height: 50px;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    padding: 0 3px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+nav ul li a{
+    color: black;
+    padding: 0 2px;
+    font-family: 'Indie Flower', cursive;
+}
+nav ul li:hover{
+    background-color: rgb(255, 207, 164);
+    border-radius: 20px;
+}
+.cehckbtn{
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
     cursor: pointer;
-    height: 100%;
-    margin-left: 9.8%;
+    display: none;
 }
-.logo > img{
-    height: 100%;
+#check{
+    display: none;
 }
-.links{
-    width: 43%;
-    display: flex;
-    align-items: center;
-    /* border: 1px solid black; */
-    justify-content: left;
+@media (max-width: 1250px){
+    .logo{
+        margin-left: 50px;
+    }
+    nav ul li a{
+        font-size: 1.4rem;
+        padding: 0 0px;
+    }
+    nav ul{
+        margin-right: 100px;
+    }
 }
-.nav_button{
-    border: 1px solid rgb(255, 210, 183);
-    text-align: center;
-    vertical-align: middle;
-    height: 100%;
-    padding: 0px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    font-family: cursive;
-}
-.nav_button:hover{
-    cursor: pointer;
-    background-color: rgb(255, 203, 170);
-}
-.intro{
-    display: flex;
-    justify-content: space-between;
-}
-.intro>p{
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin: 0px 10px;
-    font-size: 1.5em;
-}
-.intro>div{
-    width: 35%;
-    display: flex;
-    justify-content: center;
+@media (max-width: 1050px) {
+    .cehckbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 80px;
+        display: block;
+        text-align: center;
+        justify-content: center;
+        left: -100%;
+        transition: all 0.25s;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+    nav ul li:hover{
+        border-radius: 0;
+        margin: 0 0;
+    }
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
 }
