@@ -7,6 +7,7 @@
 - light themed website
 - Hover animation on cards of individual pets
 - introductory page
+- operator mono font size
 - click on the card to view more info about the animal
 - info includes vaccine status, rescued or not, available for adoption or buying, age, name if availbale , breed, category of animal, price if animal is available for buying   and not adoption/ any disease if exists.
 - website name must include term "whiskers"
