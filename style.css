@@ -8,9 +8,8 @@
 }
 
 body{
-    background-color: rgb(255, 233, 215);
-
-    font-family: 'Indie Flower', cursive;
+    background-color: rgb(255, 248, 245);
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
 }
 nav{
     background-color: #ffdab9;
@@ -119,6 +118,7 @@ body>h1{
 body>h2{
     font-size: 40px;
     margin-left: 30px;
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
 }
 body>hr{
     width: 90vw;
@@ -138,7 +138,7 @@ body>hr{
     margin-right: 40px;
     font-size: 1.5rem;
 }
-.intro>div{
+.intrologo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,5 +160,30 @@ body>hr{
     }
     .intro>p{
         width: 100vw;
+    }
+}
+
+.aim{
+    font-size: 1.5rem;
+    padding: 0 20px;
+    text-align: justify;
+}
+.report{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.report>img{
+    width: 80%;
+}
+
+@media (max-width: 1050px){
+    .report>img{
+        width: 70%;
+    }
+}
+@media (max-width: 650px){
+    .report>img{
+        width: 90%;
     }
 }
