@@ -129,10 +129,20 @@ body>h2{
     margin-left: 30px;
     font-family:  Calibri, 'Trebuchet MS', sans-serif;
 }
+body>h4{
+    font-size: 32px;
+    font-family: 'Kurale', serif;
+    text-align: center;
+}
 body>hr{
     width: 90vw;
     margin: 0 5% 0 30px;
     color: black;
+}
+.map{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 .intro{
     display: flex;
@@ -178,7 +188,21 @@ body>hr{
         width: 100vw;
     }
 }
-
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btns>a{
+    background-color: peachpuff;
+    border: 0.5px solid black;
+    padding: 8px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+}
+.btns>a:hover{
+    cursor: pointer;
+}
 .aim{
     font-size: 1.3rem;
     padding: 0 20px;
