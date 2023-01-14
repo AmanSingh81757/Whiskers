@@ -230,6 +230,10 @@ footer{
     margin: 30px 10px;
     width: 50vw;
 }
+.write>span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .email{
     width: 250px;
     text-align: center;
