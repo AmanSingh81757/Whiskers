@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kurale&family=Lobster&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -117,6 +118,11 @@ body>h1{
     font-size: 64px;
     text-align: center;
     margin-top: 10px;
+    font-family: 'Kaushan Script', cursive;
+}
+body>h3{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
 }
 body>h2{
     font-size: 40px;
@@ -135,6 +141,13 @@ body>hr{
 }
 .intro>p{
     width: 75vw;
+    padding: 0 20px;
+    transition: all 0.1s;
+    text-align: justify;
+    margin-right: 40px;
+    font-size: 1.3rem;
+}
+.intro1{
     padding: 0 20px;
     transition: all 0.1s;
     text-align: justify;
@@ -191,17 +204,17 @@ body>hr{
     }
 }
 footer{
-    height: 30vh;
+    min-height: 30vh;
     background-color: peachpuff;
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
+    bottom: 0;
 }
 .social{
     margin: 30px 5%;
     font-size: 2.5vh;
     width: 50vw;
-    overflow: hidden;
 }
 .social>span>a{
     font-size: 2.5vh;
@@ -229,7 +242,7 @@ footer{
     text-decoration: underline;
 }
 @media (max-width: 650px){
-    .links{
+    .links1{
         display: none;
     }
     .social>span{
@@ -238,5 +251,25 @@ footer{
     }
     .social>span>a{
         margin: 0 10px;
+    }
+}
+@media (max-width: 460px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-links1{
+        margin-left: 30%;
+    }
+    .social{
+        text-align: center;
+        width: 80%;
+        margin: 10px 10px;
+    }
+    .write{
+        width: 80%;
+        text-align: center;
+        margin: 10px 10px;
     }
 }
