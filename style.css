@@ -17,7 +17,6 @@ nav{
     width: 100%;
     /* display: flex; */
     align-items: center;
-    position: fixed;
     margin-top: -10px;
 }
 .logo{
@@ -83,6 +82,9 @@ nav ul li:hover{
 @media (max-width: 1050px) {
     .cehckbtn{
         display: block;
+    }
+    nav{
+        height: 60px;
     }
     nav ul{
         background-color: #ffe9d7;
