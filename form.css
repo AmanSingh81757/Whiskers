@@ -10,13 +10,15 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 248, 245);
+    background-image: url('./photos/image2.jpg');
+    background-size: cover;
+    background-position: top center;
 }
 
 .container{
     width: 100%;
     max-width: 650px;
-    background: rgb(245, 209, 171);
+    background: rgba(255, 255, 255, 0.2);
     padding: 28px;
     margin: 0 28px;
     border-radius: 10px;
