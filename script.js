@@ -15,7 +15,7 @@ donatebtn.addEventListener("click",function(){
     alert("Thank you for donating!!");
 })
 
-let adpt=document.getElementsByClassName("submit")[0];
+let adpt=document.getElementById("sub");
 adpt.addEventListener("click",function(){
     alert("Thank you for choosing to adopt a pet. Our team will contact you for further procedure.");
 })
