@@ -12,7 +12,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     margin: 0 auto;
-    /* added this line */
     max-width: 90%;
 }
 
@@ -34,7 +33,6 @@ body {
     }
 }
 
-/* Card styling */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
@@ -78,27 +76,18 @@ body {
     color: gray;
     margin-bottom: 10px;
     overflow: hidden;
-    /* added this line */
     text-overflow: ellipsis;
-    /* added this line */
     white-space: nowrap;
 }
 
 
 .adopt-btn {
     background-color: rgb(255, 140, 39);
-    /* set the background color */
     color: white;
-    /* set the text color */
     padding: 10px 20px;
-    /* set the padding */
     border-radius: 10px;
-    /* set the border radius */
     border: none;
-    /* remove the border */
     cursor: pointer;
-    /* change the cursor on hover */
     font-size: 18px;
-    /* set the font size */
     margin-bottom: 10px;
 }
